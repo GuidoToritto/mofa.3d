@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  padding-top: 6em !important;
+  padding-top: 0em !important;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -98,7 +98,7 @@ figure {
   top: 0;
   left: 0;
   right: 0;
-  padding: 28px 0;
+  padding: 10px 0;
   z-index: 1;
   border-bottom: 1px solid rgb(0, 0, 0);
   background-color: #e6e6e6bd;
@@ -131,7 +131,7 @@ figure {
   width: 20%;
 }
 .fh5co-nav #fh5co-logo {
-  font-size: 20px;
+  font-size: 10px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -147,7 +147,7 @@ figure {
   margin: 0;
 }
 .fh5co-nav .fh5co-social li a {
-  font-size: 20px;
+  font-size: 10px;
   color: #000;
 }
 .fh5co-nav a {
@@ -217,7 +217,7 @@ figure {
 .fh5co-nav ul li a {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 8px;
   padding: 30px 10px;
   color: black;
   -webkit-transition: 0.5s;
@@ -237,7 +237,7 @@ figure {
 }
 
 .name {
-  font-size: 20px;
+  font-size: 10px;
 }
 .fh5co-nav ul li.has-dropdown .dropdown {
   width: 150px;
@@ -418,6 +418,7 @@ figure {
 .fh5co-bg-section {
   border-bottom: 1px solid black;
   background-color: #fff;
+  padding-top: 50px;
 }
 
 .p {
