@@ -196,3 +196,68 @@
 
 
 }());
+
+// Variable para controlar las imágenes del carrusel
+var currentIndex = 0;
+var images = [];
+var titles = [];
+var descriptions = [];
+
+function openModal(src, title, description) {
+
+	images = [
+		'images/Mostrar/Obra final.png', 
+		'images/ImagenesOptimizadas/Llave.png', 
+		'images/ImagenesOptimizadas/Ambush.png',
+		'images/ImagenesOptimizadas/juicy.png'
+	];
+	titles = [
+		'OBRA',
+		'Folding Light',
+		'Third Image Title',
+		'Juicy Title'
+	];
+	descriptions = [
+		'This artwork explores the interaction between light and shadow, creating a dynamic visual experience',
+		'Second Image Description',
+		'Third Image Description',
+		'Juicy Description'
+	];
+
+	
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    var modalDesc = document.getElementById("modalDescription");
+
+    // Agregamos las imágenes, títulos y descripciones al carrusel
+    images = [src, 'images/ImagenesOptimizadas/Llave.png', 'images/ImagenesOptimizadas/Ambush.png'];
+    titles = [title, 'Second Image Title', 'Third Image Title'];
+    descriptions = [description, 'Second Image Description', 'Third Image Description'];
+
+    modal.style.display = "block";
+    modalImg.src = src;
+    modalDesc.innerHTML = `<strong>${title}</strong><br>${description}`;
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;  // Ciclo al principio si llegamos al final
+    updateModalImage();
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;  // Ciclo al final si llegamos al principio
+    updateModalImage();
+}
+
+function updateModalImage() {
+    var modalImg = document.getElementById("modalImage");
+    var modalDesc = document.getElementById("modalDescription");
+
+    modalImg.src = images[currentIndex];
+    modalDesc.innerHTML = `<strong>${titles[currentIndex]}</strong><br>${descriptions[currentIndex]}`;
+}
+

@@ -23,6 +23,22 @@ body {
   background: #e6e6e6;
 }
 
+* {
+  cursor: url("/images/cursor/01\ \(1\).png"), auto;
+}
+
+.learnmore:hover {
+  cursor: url("/images/cursor/03.png"), auto;
+}
+
+a:hover {
+  cursor: url("/images/cursor/03.png"), auto;
+}
+
+i:hover {
+  cursor: url("/images/cursor/03.png"), auto;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -109,7 +125,17 @@ figure {
 }
 
 .icon-arrow-up {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.74);
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.icon-arrow-up:hover {
+  background-color: #3f3e3ed1;
+  border: 1px solid black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -159,7 +185,11 @@ figure {
   .fh5co-nav .menu-2 {
     display: none;
   }
+  .box-desc {
+    border-left: 1px solid black;
+  }
 }
+
 .fh5co-nav .menu-2 li.search {
   float: left;
   width: 83%;
@@ -318,7 +348,13 @@ figure {
 }
 
 .box-desc {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.box-desc3 {
+  border-left: 1px solid black;
 }
 
 .fh5co-staff {
@@ -418,7 +454,6 @@ figure {
 .fh5co-bg-section {
   border-bottom: 1px solid black;
   background-color: #fff;
-  padding-top: 50px;
 }
 
 .p {
@@ -519,7 +554,7 @@ figure {
 }
 @media screen and (max-width: 768px) {
   .work .work-grid .inner {
-    opacity: 1;
+    opacity: 0;
     background: rgba(237, 235, 232, 0.7);
   }
 }
@@ -707,7 +742,6 @@ figure {
 
 .pic {
   border-right: none;
-  border-bottom: 1px solid black;
 }
 
 @media screen and (max-width: 540px) {
@@ -717,6 +751,7 @@ figure {
   }
   .pic {
     border-right: none !important;
+    border-bottom: 1px solid black;
   }
 }
 
@@ -725,7 +760,6 @@ figure {
 }
 
 .btnBorder {
-  border-top: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -808,7 +842,7 @@ figure {
 }
 
 .learnmore:hover {
-  background-color: rgba(15, 15, 15, 0.07);
+  background-color: rgba(15, 15, 15, 0.189);
 }
 
 #fh5co-footer {
@@ -1024,7 +1058,6 @@ figure {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: center;
   -webkit-border-radius: 4px;
@@ -1047,7 +1080,7 @@ figure {
 .fh5co-nav-toggle {
   width: 25px;
   height: 25px;
-  cursor: pointer;
+  cursor: url("/images/cursor/01\ \(1\).png"), auto;
   text-decoration: none;
   position: fixed !important;
 }
@@ -1434,3 +1467,305 @@ blockquote .person cite {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Estilo para el contenedor de la miniatura */
+.work-grid {
+  width: 100%;
+  height: 300px; /* Ajusta el tamaño que necesites */
+  background-size: cover;
+  background-position: center;
+  cursor: url("/images/cursor/01\ \(1\).png"), auto;
+  transition: 0.3s;
+}
+
+.work-grid:hover {
+  opacity: 0.8;
+}
+
+/* Estilo para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(159, 159, 159, 0.9);
+  padding-top: 50px;
+}
+
+.modal-content {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%; /* Ajustá este valor para que la imagen sea más chica */
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Mantiene las proporciones y evita que se deforme */
+  animation: fadeIn 0.5s;
+  border-radius: 0px;
+  box-shadow: none;
+  border: 1px solid black;
+}
+
+/* Texto de descripción en el modal */
+#modalCaption {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Botón de cierre */
+.close {
+  display: none;
+}
+
+.close:hover {
+  color: #000000;
+}
+
+/* Animación de apertura */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-height: 80vh;
+  }
+
+  .modal-content {
+    margin-top: 50px;
+  }
+}
+
+.modal-description {
+  background-color: #e6e6e6;
+  color: #3b3b3b;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 10px;
+  display: block; /* Asegúrate de que esté visible */
+  opacity: 1; /* Asegúrate de que no esté oculto */
+}
+
+.block {
+  font-size: 10px;
+}
+
+/* Contenedor del carrusel */
+#carousel-container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* Controles de navegación */
+#carouselControls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev,
+.next {
+  background-color: rgba(0, 0, 0, 0.74);
+  border: 1px solid black;
+  margin: 10px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: url("/images/cursor/01\ \(1\).png"), auto;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #3f3e3ed1;
+  border: 1px solid black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal-content {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+/* Para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-height: 80vh;
+  }
+  .modal-content {
+    margin-top: 50px;
+  }
+}
+
+.left-desc {
+  border-left: 1px solid black;
+}
+
+.x-desc {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.u-desc {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.intro-pics {
+  height: calc(102vh - 50px); /* Resta el margin-top de la altura total */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color:#252525;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+.index-body {
+  height: 100%;
+  touch-action: none; 
+}
+
+.index-body {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+
+#drag-container, #spin-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-10deg);
+          transform: rotateX(-10deg);
+}
+
+
+
+#drag-container img, #drag-container video {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150%;
+  height: 150%;
+  line-height: 200px;
+  font-size: 50px;
+  text-align: center;
+  border: 1px solid black;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#drag-container img:hover, #drag-container video:hover {
+  -webkit-box-shadow: 0 0 15px #fffd;
+          box-shadow: 0 0 15px #fffd;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+#drag-container p {
+  font-family: Serif;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
+          transform: translate(-50%,-50%) rotateX(90deg);
+  color: #fff;
+}
+
+#ground {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
+          transform: translate(-50%,-50%) rotateX(90deg);
+  background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
+}
+
+#music-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes spin {
+  from{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  } to{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  from{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  } to{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes spinRevert {
+  from{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  } to{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes spinRevert {
+  from{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  } to{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
