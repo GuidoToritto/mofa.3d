@@ -1636,14 +1636,11 @@ blockquote .person cite {
 
 .intro-pics {
   height: calc(102vh - 50px); /* Resta el margin-top de la altura total */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 250px;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  background-color:#252525;
+  background-color: #fff;
 }
-
 
 * {
   margin: 0;
@@ -1653,7 +1650,7 @@ blockquote .person cite {
 html,
 .index-body {
   height: 100%;
-  touch-action: none; 
+  touch-action: none;
 }
 
 .index-body {
@@ -1662,29 +1659,28 @@ html,
   display: -ms-flexbox;
   display: flex;
   -webkit-perspective: 1000px;
-          perspective: 1000px;
+  perspective: 1000px;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
-
-#drag-container, #spin-container {
+#drag-container,
+#spin-container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transform: rotateX(-10deg);
-          transform: rotateX(-10deg);
+  transform: rotateX(-10deg);
 }
 
-
-
-#drag-container img, #drag-container video {
+#drag-container img,
+#drag-container video {
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   position: absolute;
   left: 0;
   top: 0;
@@ -1694,13 +1690,16 @@ html,
   font-size: 50px;
   text-align: center;
   border: 1px solid black;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0005);
 }
 
-#drag-container img:hover, #drag-container video:hover {
+#drag-container img:hover,
+#drag-container video:hover {
   -webkit-box-shadow: 0 0 15px #fffd;
-          box-shadow: 0 0 15px #fffd;
-  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+  box-shadow: 0 0 15px #fffd;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, #0007);
 }
 
 #drag-container p {
@@ -1708,8 +1707,8 @@ html,
   position: absolute;
   top: 100%;
   left: 50%;
-  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
-          transform: translate(-50%,-50%) rotateX(90deg);
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+  transform: translate(-50%, -50%) rotateX(90deg);
   color: #fff;
 }
 
@@ -1719,9 +1718,14 @@ html,
   position: absolute;
   top: 100%;
   left: 50%;
-  -webkit-transform: translate(-50%,-50%) rotateX(90deg);
-          transform: translate(-50%,-50%) rotateX(90deg);
-  background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+  transform: translate(-50%, -50%) rotateX(90deg);
+  background: -webkit-radial-gradient(
+    center center,
+    farthest-side,
+    #9993,
+    transparent
+  );
 }
 
 #music-container {
@@ -1732,40 +1736,43 @@ html,
 }
 
 @-webkit-keyframes spin {
-  from{
+  from {
     -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  } to{
+    transform: rotateY(0deg);
+  }
+  to {
     -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
 @keyframes spin {
-  from{
+  from {
     -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  } to{
+    transform: rotateY(0deg);
+  }
+  to {
     -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 @-webkit-keyframes spinRevert {
-  from{
+  from {
     -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  } to{
+    transform: rotateY(360deg);
+  }
+  to {
     -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
 }
 @keyframes spinRevert {
-  from{
+  from {
     -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  } to{
+    transform: rotateY(360deg);
+  }
+  to {
     -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
 }
-
