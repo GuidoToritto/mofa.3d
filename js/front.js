@@ -6,11 +6,11 @@
 
 
 // You can change global variables here:
-var radius = 450; // how big of the radius
+var radius = 550; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
-var imgWidth = 150; // width of images (unit: px)
-var imgHeight = 200; // height of images (unit: px)
+var imgWidth = 180; // width of images (unit: px)
+var imgHeight = 230; // height of images (unit: px)
 
 // Link of background music - set 'null' if you dont want to play background music
 var bgMusicURL = 'https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a';
