@@ -140,7 +140,9 @@ figure {
 @media screen and (max-width: 768px) {
   .fh5co-nav {
     padding: 28px 0;
+    border: none;
   }
+  
 }
 .fh5co-nav .fh5co-top-logo,
 .fh5co-nav .fh5co-top-menu,
@@ -1635,11 +1637,10 @@ blockquote .person cite {
 }
 
 .intro-pics {
-  height: calc(102vh - 50px); /* Resta el margin-top de la altura total */
-  padding-top: 200px;
+  height: 100%;
+  padding-top: 250px;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  background-color: #fff;
 }
 
 * {
@@ -1786,4 +1787,8 @@ html,
   .obras{
     margin-top: 75px;
   }
+}
+
+.footer-index{
+  color: black;
 }
