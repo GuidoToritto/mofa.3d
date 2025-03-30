@@ -142,7 +142,6 @@ figure {
     padding: 28px 0;
     border: none;
   }
-  
 }
 .fh5co-nav .fh5co-top-logo,
 .fh5co-nav .fh5co-top-menu,
@@ -350,8 +349,15 @@ figure {
 }
 
 .box-desc {
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border: 1px solid black;
+}
+
+.box-desc2{
+  border-left: 1px solid black;
+ border-bottom: 1px solid black;
+}
+
+.border-images{
   border-right: 1px solid black;
 }
 
@@ -454,8 +460,11 @@ figure {
 }
 
 .fh5co-bg-section {
-  border-bottom: 1px solid black;
   background-color: #fff;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .p {
@@ -1637,14 +1646,11 @@ blockquote .person cite {
 }
 
 .intro-pics {
-  height: 100%;
+  height: 96vh;
   padding-top: 200px;
   padding-right: 50px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  background-color: rgb(255, 255, 255);
 }
-
-
 
 * {
   margin: 0;
@@ -1669,6 +1675,10 @@ html,
   transform-style: preserve-3d;
 }
 
+.i-b2 {
+  border: solid 1px black;
+}
+
 #drag-container,
 #spin-container {
   position: relative;
@@ -1680,12 +1690,7 @@ html,
   transform-style: preserve-3d;
   -webkit-transform: rotateX(-10deg);
   transform: rotateX(-10deg);
-  
 }
-
-
-
-
 
 #drag-container img,
 #drag-container video {
@@ -1787,23 +1792,28 @@ html,
   }
 }
 
-.obras{
+.obras {
   margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {
-  .obras{
+  .obras {
     margin-top: 75px;
   }
-  .intro-pics{
+  .intro-pics {
     padding-top: 250px;
   }
 }
 
-.footer-index{
+.footer-index {
   color: black;
 }
 
-.nav-div{
+.nav-div {
   display: none;
 }
+
+.i-desc {
+  border-top: 1px solid black;
+}
+
