@@ -1638,10 +1638,13 @@ blockquote .person cite {
 
 .intro-pics {
   height: 100%;
-  padding-top: 250px;
+  padding-top: 200px;
+  padding-right: 50px;
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
+
+
 
 * {
   margin: 0;
@@ -1677,7 +1680,12 @@ html,
   transform-style: preserve-3d;
   -webkit-transform: rotateX(-10deg);
   transform: rotateX(-10deg);
+  
 }
+
+
+
+
 
 #drag-container img,
 #drag-container video {
@@ -1787,8 +1795,15 @@ html,
   .obras{
     margin-top: 75px;
   }
+  .intro-pics{
+    padding-top: 250px;
+  }
 }
 
 .footer-index{
   color: black;
+}
+
+.nav-div{
+  display: none;
 }
