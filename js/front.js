@@ -34,17 +34,17 @@ function preloadImages() {
   var aImg = ospin.getElementsByTagName('img');
   var totalImages = aImg.length;
   var loadedImages = 0;
-  
+
   // Si no hay imágenes, inicializar directamente
   if (totalImages === 0) {
     hideLoaderAndInit();
     return;
   }
-  
+
   // Verificar cuando cada imagen se carga
   for (var i = 0; i < totalImages; i++) {
     const img = aImg[i];
-    
+
     // Si la imagen ya está cargada
     if (img.complete) {
       loadedImages++;
@@ -59,7 +59,7 @@ function preloadImages() {
           hideLoaderAndInit();
         }
       });
-      
+
       // Manejar errores de carga
       img.addEventListener('error', function() {
         loadedImages++;
@@ -69,10 +69,23 @@ function preloadImages() {
       });
     }
   }
+
+  // Llamar a la función hideLoaderAndInit() después de que se completen las imágenes
+  setTimeout(function() {
+    if (loadedImages === totalImages) {
+      hideLoaderAndInit();
+    }
+  }, 1000);
 }
+
+
+
+
 
 // Ocultar el loader e inicializar el carrusel
 function hideLoaderAndInit() {
+
+  
   const loader = document.querySelector('.fh5co-loader');
   const mainContent = document.getElementById('drag-container');
   
