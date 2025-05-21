@@ -152,7 +152,10 @@ figure {
     border-right: none;
     border-bottom: 1px solid black;
   }
+
 }
+
+
 
 .fh5co-nav .fh5co-top-logo,
 .fh5co-nav .fh5co-top-menu,
@@ -1003,7 +1006,8 @@ figure {
   position: absolute;
   z-index: 1901;
   width: 270px;
-  background: black;
+  background: rgba(0, 0, 0, 0.395);
+  border-left: 1px solid black;
   top: 0;
   right: 0;
   top: 0;
@@ -1565,15 +1569,7 @@ figure {
   padding-bottom: 2em !important;
 }
 
-.fh5co-loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
-}
+
 
 
 
@@ -1824,7 +1820,7 @@ blockquote .person cite {
 
 .intro-pics {
   height: 96vh;
-  padding-top: 150px;
+  padding-top: 200px;
   padding-right: 50px;
   background-color: rgb(255, 255, 255);
 }
@@ -1872,6 +1868,7 @@ html,
   transform-style: preserve-3d;
   -webkit-transform: rotateX(-10deg);
   transform: rotateX(-10deg);
+  
 }
 
 #drag-container img,
@@ -1881,6 +1878,7 @@ html,
   position: absolute;
   left: 0;
   top: 0;
+
   width: 150%;
   height: 150%;
   line-height: 200px;
@@ -1988,6 +1986,10 @@ html,
   .intro-pics {
     padding-top: 250px;
   }
+  #drag-container img{
+
+   
+  }
 
 }
 
@@ -2069,3 +2071,4 @@ html,
   width: 700px;
   text-align: center;
 }
+
