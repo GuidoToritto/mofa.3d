@@ -1820,7 +1820,7 @@ blockquote .person cite {
 
 .intro-pics {
   height: 96vh;
-  padding-top: 200px;
+  padding-top: 300px;
   padding-right: 50px;
   background-color: rgb(255, 255, 255);
 }
@@ -1879,8 +1879,8 @@ html,
   left: 0;
   top: 0;
 
-  width: 150%;
-  height: 150%;
+  width: 100%;
+  height: 100%;
   line-height: 200px;
   font-size: 50px;
   text-align: center;
@@ -1986,10 +1986,6 @@ html,
   .intro-pics {
     padding-top: 250px;
   }
-  #drag-container img{
-
-   
-  }
 
 }
 
@@ -2070,5 +2066,13 @@ html,
 .inside{
   width: 700px;
   text-align: center;
+}
+
+img{
+  opacity: 90%;
+}
+
+img:hover{
+  opacity: 100%;
 }
 
