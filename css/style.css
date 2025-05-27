@@ -2076,3 +2076,12 @@ img:hover{
   opacity: 100%;
 }
 
+.loguito {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.loguito:hover {
+  opacity: 0.5;
+  /* evitamos mix-blend-mode para transiciones suaves */
+}
