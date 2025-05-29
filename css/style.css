@@ -675,6 +675,7 @@ figure {
 .work:hover .inner,
 .work:focus .inner {
   opacity: 1;
+  height: 360px;
 }
 
 .work:hover .desc h3 a,
